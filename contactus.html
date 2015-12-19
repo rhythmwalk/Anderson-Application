@@ -1,0 +1,45 @@
+<div data-role="page" id="registerPage">
+
+	<div data-role="header">
+		<h1>Register Page</h1>
+	</div>
+
+	<div data-role="content">	
+
+		<div id="errorBox"><ul></ul></div>
+
+		<form action="process.cfm" method="post" id="registerForm">
+
+			<fieldset data-role="fieldcontain"> 
+				<label for="username">Username:</label>
+				<input type="text" name="username" id="username" class="required" minlength="5">
+			</fieldset>
+
+			<fieldset data-role="fieldcontain"> 
+				<label for="password">Password:</label>
+				<input type="password" name="password" id="password" class="required" minlength="5">
+			</fieldset>
+
+			<fieldset data-role="fieldcontain"> 
+				<label for="password2">Confirm Password:</label>
+				<input type="password" name="password2" id="password2" class="required passmatch" minlength="5">
+			</fieldset>
+
+			<fieldset data-role="fieldcontain"> 
+				<label for="email">Email:</label>
+				<input type="email" name="email" id="email" class="required email" minlength="5">
+			</fieldset>
+
+
+
+
+
+			<input type="submit" value="Register">
+
+		</form>
+
+</div>
+	</div>
+	
+</div>
+

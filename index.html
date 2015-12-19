@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Anderson Allergy</title>
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+ 	<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="fhe.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile.structure-1.3.1.min.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+<script src="jquery.validate.js"></script>
+<script src="main.js"></script>
+
+</head>
+
+<style>
+#banner h1.headline a {
+    color: #000;
+    font-weight: bold;
+    left: 0;
+    margin: 0;
+    padding-top: 4.1em;
+	padding-left:4.5em;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+	font-size: 5.9vw;
+	text-decoration:none;	
+}
+
+label.error { 
+	float: left; 
+	color: red; 
+	padding-top: .5em; 
+	vertical-align: top; 
+	font-weight:bold
+}
+</style>
+<body   >
+<div data-role="page" id="homepage">
+<div class="clearfix"> </div>
+<header id="main-header" >
+<div class="help"> <span id="number"><a onClick="app.openNativeAppWindow('tel:407-872-1110')">407-872-1110</a><br>
+<p style="font-weight:800;padding-left:5px;margin-left:15px;">ANDERSON ALLERGY</p>
+</div>
+</header>
+
+<div style="margin-top:61px;" id="gallery">
+<center><h2>OUR SERVICES</h2></center> 
+</div>
+  
+<div class="clearfix"> </div>
+<div id="info">
+<center>
+Allergy Test<br>
+Food Allergy<br>
+Hay Fever<br>
+Immune Therapy<br>
+SLIT Therapy<br>
+</center>
+	<div style="padding-left:5%;padding-right:5%;" >  <a type="button" data-theme="b" href="#suffering">Am I Suffering from Allergies?</a> </div>
+	<div style="padding-left:5%;padding-right:5%;" >  <a type="button" data-theme="b"  href="#quality">Quality Of Life Survey</a> </div>
+ <div class="ui-grid-a">
+	<div class="ui-block-a">  <a type="button" data-theme="b"  onClick="app.openNativeAppWindow('tel:407-872-1110')">Call Now </a> </div>
+	<div class="ui-block-b"> <a type="button" data-theme="a"  onClick="app.openNativeAppWindow('mailto:info@andersonallergy.com')" >Contact Us </a> </div>	   
+ </div>
+	
+</div>
+<div id="footer">
+    <div class="clearfix"> </div>
+ <div align="center"><a onClick="app.openNativeAppWindow('http://andersonallergy.com')">View our full site</a></div>
+</div>
+</div>
+<div data-role="page" id="suffering">
+
+	<div data-role="header">
+	<a href="#homepage" data-role="button" data-theme="b" data-icon="arrow-l" data-iconpos="notext" data-transition="slide" data-direction="reverse" data-iconshadow="false" data-inline="true">
+    Back
+</a>
+		<h1>Am I Suffering from Allergies?</h1>
+	</div>
+
+	<div data-role="content">	
+
+		<div id="errorBox"><ul></ul></div>
+
+		<form action="process.cfm" method="post" id="sufferingform">
+
+			<fieldset data-role="fieldcontain"> 
+				<label for="username">Username:</label>
+				<input type="text" name="username" id="username" class="required" minlength="5">
+			</fieldset>
+
+			<fieldset data-role="fieldcontain"> 
+				<label for="password">Password:</label>
+				<input type="password" name="password" id="password" class="required" minlength="5">
+			</fieldset>
+
+			<fieldset data-role="fieldcontain"> 
+				<label for="password2">Confirm Password:</label>
+				<input type="password" name="password2" id="password2" class="required passmatch" minlength="5">
+			</fieldset>
+
+			<fieldset data-role="fieldcontain"> 
+				<label for="email">Email:</label>
+				<input type="email" name="email" id="email" class="required email" minlength="5">
+			</fieldset>
+
+
+
+
+
+			<input type="submit" value="Register">
+
+		</form>
+
+</div>
+<div id="footer">
+    <div class="clearfix"> </div>
+ <div align="center"><a onClick="app.openNativeAppWindow('http://andersonallergy.com')">View our full site</a></div>
+</div>
+</div>
+<div data-role="page" id="quality">
+
+	<div data-role="header">
+	<a href="#homepage" data-role="button" data-theme="b" data-icon="arrow-l" data-iconpos="notext" data-transition="slide" data-direction="reverse" data-iconshadow="false" data-inline="true">
+    Back
+</a>
+		<h1>Quality Of Life Survey</h1>
+	</div>
+
+	<div data-role="content">	
+
+		<div id="errorBox"><ul></ul></div>
+
+		<form action="process.cfm" method="post" id="qualityform">
+
+			<fieldset data-role="fieldcontain"> 
+				<label for="username">Username:</label>
+				<input type="text" name="username" id="username" class="required" minlength="5">
+			</fieldset>
+
+			<fieldset data-role="fieldcontain"> 
+				<label for="password">Password:</label>
+				<input type="password" name="password" id="password" class="required" minlength="5">
+			</fieldset>
+
+			<fieldset data-role="fieldcontain"> 
+				<label for="password2">Confirm Password:</label>
+				<input type="password" name="password2" id="password2" class="required passmatch" minlength="5">
+			</fieldset>
+
+			<fieldset data-role="fieldcontain"> 
+				<label for="email">Email:</label>
+				<input type="email" name="email" id="email" class="required email" minlength="5">
+			</fieldset>
+
+
+
+
+
+			<input type="submit" value="Register">
+
+		</form>
+
+</div>
+<div id="footer">
+    <div class="clearfix"> </div>
+ <div align="center"><a onClick="app.openNativeAppWindow('http://andersonallergy.com')">View our full site</a></div>
+</div>
+</div>	
+
+
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+
+</body>
+</html>
